@@ -10,17 +10,31 @@ pub fn run(data: ProcessingData) {
     println!("Started parallel processing:");
     println!();
 
-    println!("iter: {} ms", iter(data.range).as_millis());
     println!(
-        "iter_mut: {} µs",
+        "iter({}): {} ms",
+        data.range.end.clone(),
+        iter(data.range).as_millis()
+    );
+    println!(
+        "iter_mut({}): {} µs",
+        data.numbers.len(),
         iter_mut(data.numbers.clone()).as_micros()
     );
     println!(
-        "iter_all: {} µs",
+        "iter_all({}): {} µs",
+        data.numbers.len(),
         iter_all(data.numbers.clone()).as_micros()
     );
-    println!("iter_any(): {} µs", iter_any(data.numbers).as_micros());
-    println!("sort(): {} µs", sort(data.strings).as_micros());
+    println!(
+        "iter_any({}): {} µs",
+        data.numbers.len(),
+        iter_any(data.numbers).as_micros()
+    );
+    println!(
+        "sort({}): {} µs",
+        data.strings.len(),
+        sort(data.strings).as_micros()
+    );
 
     println!();
     println!("Parallel processing finished...");

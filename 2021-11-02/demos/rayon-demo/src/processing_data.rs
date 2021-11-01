@@ -11,9 +11,9 @@ pub struct ProcessingData {
 impl Default for ProcessingData {
     fn default() -> Self {
         Self {
-            numbers: get_random_int_vec(1000000),
+            numbers: get_random_int_vec(100_000_000),
             range: 0..10,
-            strings: get_random_str_vec(100),
+            strings: get_random_str_vec(10_000),
         }
     }
 }
