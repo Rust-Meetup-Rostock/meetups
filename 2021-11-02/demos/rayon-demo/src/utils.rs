@@ -5,11 +5,12 @@ use std::thread;
 use std::time;
 
 pub fn get_random_int_vec(size: usize) -> Vec<i32> {
-    let mut generator = rand::thread_rng();
-
     (0..size)
-        .into_iter()
-        .map(|_| generator.gen::<i32>())
+        .into_par_iter()
+        .map(|_| {
+            let mut generator = rand::thread_rng();
+            generator.gen::<i32>()
+        })
         .collect()
 }
 

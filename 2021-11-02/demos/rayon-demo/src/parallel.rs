@@ -16,28 +16,29 @@ pub fn run(data: ProcessingData) {
         iter(data.range).as_millis()
     );
     println!(
-        "iter_mut({}): {} µs",
+        "iter_mut({}): {} ms",
         data.numbers.len(),
-        iter_mut(data.numbers.clone()).as_micros()
+        iter_mut(data.numbers.clone()).as_millis()
     );
     println!(
-        "iter_all({}): {} µs",
+        "iter_all({}): {} ms",
         data.numbers.len(),
-        iter_all(data.numbers.clone()).as_micros()
+        iter_all(data.numbers.clone()).as_millis()
     );
     println!(
-        "iter_any({}): {} µs",
+        "iter_any({}): {} ms",
         data.numbers.len(),
-        iter_any(data.numbers).as_micros()
+        iter_any(data.numbers).as_millis()
     );
     println!(
-        "sort({}): {} µs",
+        "sort({}): {} ms",
         data.strings.len(),
-        sort(data.strings).as_micros()
+        sort(data.strings).as_millis()
     );
 
     println!();
     println!("Parallel processing finished...");
+    println!();
 }
 
 fn iter(range: Range<i32>) -> Duration {

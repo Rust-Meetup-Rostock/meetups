@@ -2,8 +2,6 @@ use warp::http::{HeaderMap, StatusCode};
 use warp::reply::{json, with_status};
 use warp::{Filter, Rejection, Reply};
 
-use crate::api::error::Error;
-
 use super::list_headers;
 use super::Entity;
 

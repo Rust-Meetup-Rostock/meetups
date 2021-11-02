@@ -1,16 +1,9 @@
-extern crate env_logger;
-extern crate serde_derive;
-extern crate warp;
-
 mod api;
-
-use tokio::task;
 
 #[tokio::main]
 async fn main() {
     init_log();
-
-    let _ = task::spawn(api::run()).await;
+    api::run().await;
 }
 
 fn init_log() {

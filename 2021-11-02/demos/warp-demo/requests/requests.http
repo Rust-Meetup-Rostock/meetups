@@ -10,11 +10,7 @@ GET http://127.0.0.1:3030/goodbye/world HTTP/1.1
 
 ### Gimme Json
 
-GET http://127.0.0.1:3030/gimme-json/0 HTTP/1.1
-
-### Gimme Json
-
-GET http://127.0.0.1:3030/gimme-json/0 HTTP/1.1
+GET http://127.0.0.1:3030/gimme-json/2 HTTP/1.1
 
 ### POST
 
