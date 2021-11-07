@@ -38,9 +38,3 @@
 - Da es einen großen Teil von Interessierten und weniger Rust Profis gab, wird es nächstes Mal einsteigerfreundliche Themen geben
 - Es wird sich dann beim Live-Coding mit den Konzepten von Rust auseinander gesetzt
 - Mehr Interaktion und weniger Vortragsmonologe
-
-## Anmerkungen
-
-- Da es einen großen Teil von Interessierten und weniger Rust Profis gab, wird es nächstes Mal einsteigerfreundliche Themen geben
-- Es wird sich dann beim Live-Coding mit den Konzepten von Rust auseinander gesetzt
-- Mehr Interaktion und weniger Vortragsmonologe
