@@ -1,5 +1,7 @@
 # Rust Meetup Rostock
 
+![alt text](https://rustacean.net/assets/rustacean-flat-happy.png "Logo Title Text 1")
+
 ## Worum geht es?
 
 Ziel ist es Leute zusammenzubringen, die Rust bereits nutzen oder die neugierig sind mehr darüber zu erfahren.
