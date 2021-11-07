@@ -1,6 +1,6 @@
 # Rust Meetup Rostock - Mitschrift
 
-02.11.2021 - 17:00 - 20:00 Uhr
+02.11.2021 - 17:00 - 20:00 Uhr - 13 Teilnehmer
 
 ## Agenda
 
